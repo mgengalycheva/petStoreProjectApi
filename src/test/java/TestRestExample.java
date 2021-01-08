@@ -36,7 +36,7 @@ public class TestRestExample {
         int petId = 1 + random.nextInt(1000 - 1);
 
         Map<String, String> pet = new HashMap<>();
-        pet.put("id", "" + petId + "");
+        pet.put("id", Integer.toString(petId));
         pet.put("name", "test pet");
 
         logger.info("start test");
@@ -60,7 +60,7 @@ public class TestRestExample {
         int petId = 1 + random.nextInt(1000 - 1);
 
         Map<String, String> pet = new HashMap<>();
-        pet.put("id", "" + petId + "");
+        pet.put("id", Integer.toString(petId));
         pet.put("name", "test pet");
 
         logger.info("start test");
